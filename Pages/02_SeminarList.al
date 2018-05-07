@@ -1,8 +1,8 @@
 page 123456702 "Seminar List"
 {
+    Caption = 'Seminar List';
     PageType = List;
     SourceTable = Seminar;
-    Caption = 'Seminar List';
     CardPageId = "Seminar Card";
     Editable = false;
     UsageCategory = Lists;
@@ -13,36 +13,36 @@ page 123456702 "Seminar List"
         {
             repeater(Group)
             {
-                field("No.";"No.")
-                {
-                    
-                }
-                field(Name;Name)
-                {
-                    
-                }
-                field("Seminar Duration";"Seminar Duration")
-                {
-                    
-                }
-                field("Seminar Price";"Seminar Price")
+                field("No."; "No.")
                 {
 
                 }
-                field("Minimum Participants";"Minimum Participants")
+                field(Name; Name)
                 {
-                    
+
                 }
-                
-                field("Maximum Participants";"Maximum Participants")
+                field("Seminar Duration"; "Seminar Duration")
                 {
-                    
+
+                }
+                field("Seminar Price"; "Seminar Price")
+                {
+
+                }
+                field("Minimum Participants"; "Minimum Participants")
+                {
+
+                }
+
+                field("Maximum Participants"; "Maximum Participants")
+                {
+
                 }
             }
         }
         area(factboxes)
         {
-             systempart("Links"; Links)
+            systempart("Links"; Links)
             {
 
             }
@@ -55,13 +55,16 @@ page 123456702 "Seminar List"
 
     actions
     {
-        area(processing)
+        area(Navigation)
         {
-            action(ActionName)
+            group("&Seminar")
             {
-                trigger OnAction();
-                begin
-                end;
+                action("Co&mments")
+                {
+                    //RunObject = page "Seminar Comment Sheet";
+                    //RunPageLink = "TableName"=const(Seminar),"No."=field("No.");
+                    Image = Comment;
+                }
             }
         }
     }
