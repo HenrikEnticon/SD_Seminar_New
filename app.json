@@ -1,0 +1,23 @@
+{
+  "id": "48f94ccf-f4ed-4be4-9bd5-2f3a1c279e5d",
+  "name": "SD Seminar",
+  "publisher": "Henrik Hellstrand",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 123456700,
+    "to": 123456799
+  }
+}
