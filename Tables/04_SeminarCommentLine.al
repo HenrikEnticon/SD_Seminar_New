@@ -2,13 +2,16 @@ table 123456704 "Seminar Comment Line"
 {
     Caption = 'Seminar Comment Line';
     DataClassification = ToBeClassified;
+    LookupPageId = "Seminar Comment List";
+    DrillDownPageId ="Seminar Comment List";
     
     fields
     {
         field(10;"Table Name";Option)
         {
             Caption = 'Table Name';
-            OptionMembers = "Seminar;Seminar Registration Header;Posted Seminar Reg. Header";
+            OptionMembers = "Seminar","Seminar Registration","Seminar Registration Header","Posted Seminar Reg. Header";
+            OptionCaption = 'Seminar,Seminar Registration,Seminar Registration Header,Posted Seminar Reg. Header';
             DataClassification = ToBeClassified;
         }
         field(20;"Document Line No.";Integer)
