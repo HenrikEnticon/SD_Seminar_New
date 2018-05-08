@@ -67,11 +67,9 @@ table 123456701 Seminar
         {
             Caption = 'Comment';
             Editable = false;
-            //FieldClass = FlowField;
-            //CalcFormula=exist("Seminar Comment Line")
-            //where("Table Name"= const("Seminar")),
-            //      "No."=field("No.")));
-            DataClassification = ToBeClassified;
+            FieldClass = FlowField;
+            //CalcFormula=exist("Seminar Comment Line") where("Table Name"= const("Seminar")),"No."=field("No.")));
+            //DataClassification = ToBeClassified;
         }
         field(100; "Seminar Price"; Decimal)
         {
@@ -122,6 +120,7 @@ table 123456701 Seminar
         Seminar: Record Seminar;
         GenProdPostingGroup: Record "Gen. Product Posting Group";
         NoSeriesMgt: Codeunit NoSeriesManagement;
+        
 
     trigger OnInsert();
     begin
